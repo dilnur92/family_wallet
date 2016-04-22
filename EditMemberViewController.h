@@ -16,7 +16,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *phoneOne;
 @property (weak, nonatomic) IBOutlet UILabel *phoneTwo;
 @property (weak, nonatomic) IBOutlet UITextField *financeTextEdit;
+@property (weak, nonatomic) IBOutlet UIImageView *image;
 
 @property (weak, nonatomic) IBOutlet UILabel *ageGenderLabel;
 - (IBAction)save:(UIBarButtonItem *)sender;
+@property (weak, nonatomic) IBOutlet UINavigationItem *navItem;
 @end

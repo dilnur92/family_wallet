@@ -27,5 +27,18 @@
     [super viewDidLoad];
     _phoneOne.text = familyMember.phone1;
     _phoneTwo.text = familyMember.phone2;
+    _navItem.title = familyMember.name;
+    _ageGenderLabel.text = [[[familyMember.age stringValue] stringByAppendingString:@", "]stringByAppendingString:familyMember.phone5];
+    NSData *data = familyMember.image;
+    UIImage *im = [UIImage imageNamed:@"empty"];
+    if(data) {
+        if([data isKindOfClass: NSData.class]) {
+            im = [UIImage imageWithData:data];
+        }
+    } else {
+        NSLog(@"member.image is nil");
+    }
+    _image.image = im;
+    
 }
 @end

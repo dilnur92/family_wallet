@@ -239,6 +239,8 @@
                     <connections>
                         <outlet property="ageGenderLabel" destination="7AI-x3-P7x" id="cxa-AI-qat"/>
                         <outlet property="financeTextEdit" destination="0pr-6u-IdV" id="hIV-RY-cEW"/>
+                        <outlet property="image" destination="GkA-KS-0PQ" id="u3v-1Y-PZ7"/>
+                        <outlet property="navItem" destination="tjO-yl-Phx" id="pIG-vH-g6q"/>
                         <outlet property="phoneOne" destination="IJe-Im-vST" id="EFz-By-cVT"/>
                         <outlet property="phoneTwo" destination="7cb-Dk-RQh" id="vK3-YM-Npa"/>
                     </connections>
