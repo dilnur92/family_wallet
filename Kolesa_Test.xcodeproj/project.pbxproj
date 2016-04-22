@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		326309081CC9DBBF0013D281 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 326309071CC9DBBF0013D281 /* main.m */; };
+		3263090B1CC9DBBF0013D281 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3263090A1CC9DBBF0013D281 /* AppDelegate.m */; };
+		326309111CC9DBBF0013D281 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3263090F1CC9DBBF0013D281 /* Main.storyboard */; };
+		326309131CC9DBBF0013D281 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 326309121CC9DBBF0013D281 /* Assets.xcassets */; };
+		326309161CC9DBBF0013D281 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 326309141CC9DBBF0013D281 /* LaunchScreen.storyboard */; };
+		326309211CC9DBBF0013D281 /* Kolesa_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 326309201CC9DBBF0013D281 /* Kolesa_TestTests.m */; };
+		3263092C1CC9DBBF0013D281 /* Kolesa_TestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3263092B1CC9DBBF0013D281 /* Kolesa_TestUITests.m */; };
+		3263093B1CC9FE220013D281 /* FamilyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3263093A1CC9FE220013D281 /* FamilyTableViewController.m */; };
+		3263093E1CC9FE8E0013D281 /* AddMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3263093D1CC9FE8E0013D281 /* AddMemberViewController.m */; };
+		326309411CC9FEA80013D281 /* EditMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 326309401CC9FEA80013D281 /* EditMemberViewController.m */; };
+		326309441CC9FFE90013D281 /* CoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 326309431CC9FFE90013D281 /* CoreViewController.m */; };
+		3263099B1CCA1FC50013D281 /* Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 326309991CCA1FC50013D281 /* Test.xcdatamodeld */; };
+		326309A01CCA205B0013D281 /* FamilyMember+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3263099D1CCA205B0013D281 /* FamilyMember+CoreDataProperties.m */; };
+		326309A11CCA205B0013D281 /* FamilyMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 3263099F1CCA205B0013D281 /* FamilyMember.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3263091D1CC9DBBF0013D281 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 326308FB1CC9DBBF0013D281 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 326309021CC9DBBF0013D281;
+			remoteInfo = Kolesa_Test;
+		};
+		326309281CC9DBBF0013D281 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 326308FB1CC9DBBF0013D281 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 326309021CC9DBBF0013D281;
+			remoteInfo = Kolesa_Test;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		326309031CC9DBBF0013D281 /* Kolesa_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kolesa_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		326309071CC9DBBF0013D281 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		326309091CC9DBBF0013D281 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3263090A1CC9DBBF0013D281 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		326309101CC9DBBF0013D281 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		326309121CC9DBBF0013D281 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		326309151CC9DBBF0013D281 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		326309171CC9DBBF0013D281 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3263091C1CC9DBBF0013D281 /* Kolesa_TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kolesa_TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		326309201CC9DBBF0013D281 /* Kolesa_TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kolesa_TestTests.m; sourceTree = "<group>"; };
+		326309221CC9DBBF0013D281 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		326309271CC9DBBF0013D281 /* Kolesa_TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kolesa_TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3263092B1CC9DBBF0013D281 /* Kolesa_TestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kolesa_TestUITests.m; sourceTree = "<group>"; };
+		3263092D1CC9DBBF0013D281 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		326309391CC9FE220013D281 /* FamilyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FamilyTableViewController.h; path = ../FamilyTableViewController.h; sourceTree = "<group>"; };
+		3263093A1CC9FE220013D281 /* FamilyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FamilyTableViewController.m; path = ../FamilyTableViewController.m; sourceTree = "<group>"; };
+		3263093C1CC9FE8E0013D281 /* AddMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddMemberViewController.h; path = ../AddMemberViewController.h; sourceTree = "<group>"; };
+		3263093D1CC9FE8E0013D281 /* AddMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddMemberViewController.m; path = ../AddMemberViewController.m; sourceTree = "<group>"; };
+		3263093F1CC9FEA80013D281 /* EditMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditMemberViewController.h; path = ../EditMemberViewController.h; sourceTree = "<group>"; };
+		326309401CC9FEA80013D281 /* EditMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditMemberViewController.m; path = ../EditMemberViewController.m; sourceTree = "<group>"; };
+		326309421CC9FFE90013D281 /* CoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreViewController.h; sourceTree = "<group>"; };
+		326309431CC9FFE90013D281 /* CoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreViewController.m; sourceTree = "<group>"; };
+		3263099A1CCA1FC50013D281 /* Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Test.xcdatamodel; sourceTree = "<group>"; };
+		3263099C1CCA205B0013D281 /* FamilyMember+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "FamilyMember+CoreDataProperties.h"; path = "../FamilyMember+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3263099D1CCA205B0013D281 /* FamilyMember+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "FamilyMember+CoreDataProperties.m"; path = "../FamilyMember+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3263099E1CCA205B0013D281 /* FamilyMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FamilyMember.h; path = ../FamilyMember.h; sourceTree = "<group>"; };
+		3263099F1CCA205B0013D281 /* FamilyMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FamilyMember.m; path = ../FamilyMember.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		326309001CC9DBBF0013D281 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		326309191CC9DBBF0013D281 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		326309241CC9DBBF0013D281 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		326308FA1CC9DBBF0013D281 = {
+			isa = PBXGroup;
+			children = (
+				326309051CC9DBBF0013D281 /* Kolesa_Test */,
+				3263091F1CC9DBBF0013D281 /* Kolesa_TestTests */,
+				3263092A1CC9DBBF0013D281 /* Kolesa_TestUITests */,
+				326309041CC9DBBF0013D281 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		326309041CC9DBBF0013D281 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				326309031CC9DBBF0013D281 /* Kolesa_Test.app */,
+				3263091C1CC9DBBF0013D281 /* Kolesa_TestTests.xctest */,
+				326309271CC9DBBF0013D281 /* Kolesa_TestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		326309051CC9DBBF0013D281 /* Kolesa_Test */ = {
+			isa = PBXGroup;
+			children = (
+				326309421CC9FFE90013D281 /* CoreViewController.h */,
+				326309431CC9FFE90013D281 /* CoreViewController.m */,
+				3263093C1CC9FE8E0013D281 /* AddMemberViewController.h */,
+				3263093D1CC9FE8E0013D281 /* AddMemberViewController.m */,
+				3263093F1CC9FEA80013D281 /* EditMemberViewController.h */,
+				326309401CC9FEA80013D281 /* EditMemberViewController.m */,
+				326309391CC9FE220013D281 /* FamilyTableViewController.h */,
+				3263093A1CC9FE220013D281 /* FamilyTableViewController.m */,
+				326309091CC9DBBF0013D281 /* AppDelegate.h */,
+				3263090A1CC9DBBF0013D281 /* AppDelegate.m */,
+				3263090F1CC9DBBF0013D281 /* Main.storyboard */,
+				326309121CC9DBBF0013D281 /* Assets.xcassets */,
+				3263099C1CCA205B0013D281 /* FamilyMember+CoreDataProperties.h */,
+				3263099D1CCA205B0013D281 /* FamilyMember+CoreDataProperties.m */,
+				3263099E1CCA205B0013D281 /* FamilyMember.h */,
+				3263099F1CCA205B0013D281 /* FamilyMember.m */,
+				326309991CCA1FC50013D281 /* Test.xcdatamodeld */,
+				326309141CC9DBBF0013D281 /* LaunchScreen.storyboard */,
+				326309171CC9DBBF0013D281 /* Info.plist */,
+				326309061CC9DBBF0013D281 /* Supporting Files */,
+			);
+			path = Kolesa_Test;
+			sourceTree = "<group>";
+		};
+		326309061CC9DBBF0013D281 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				326309071CC9DBBF0013D281 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3263091F1CC9DBBF0013D281 /* Kolesa_TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				326309201CC9DBBF0013D281 /* Kolesa_TestTests.m */,
+				326309221CC9DBBF0013D281 /* Info.plist */,
+			);
+			path = Kolesa_TestTests;
+			sourceTree = "<group>";
+		};
+		3263092A1CC9DBBF0013D281 /* Kolesa_TestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3263092B1CC9DBBF0013D281 /* Kolesa_TestUITests.m */,
+				3263092D1CC9DBBF0013D281 /* Info.plist */,
+			);
+			path = Kolesa_TestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		326309021CC9DBBF0013D281 /* Kolesa_Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 326309301CC9DBBF0013D281 /* Build configuration list for PBXNativeTarget "Kolesa_Test" */;
+			buildPhases = (
+				326308FF1CC9DBBF0013D281 /* Sources */,
+				326309001CC9DBBF0013D281 /* Frameworks */,
+				326309011CC9DBBF0013D281 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kolesa_Test;
+			productName = Kolesa_Test;
+			productReference = 326309031CC9DBBF0013D281 /* Kolesa_Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3263091B1CC9DBBF0013D281 /* Kolesa_TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 326309331CC9DBBF0013D281 /* Build configuration list for PBXNativeTarget "Kolesa_TestTests" */;
+			buildPhases = (
+				326309181CC9DBBF0013D281 /* Sources */,
+				326309191CC9DBBF0013D281 /* Frameworks */,
+				3263091A1CC9DBBF0013D281 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3263091E1CC9DBBF0013D281 /* PBXTargetDependency */,
+			);
+			name = Kolesa_TestTests;
+			productName = Kolesa_TestTests;
+			productReference = 3263091C1CC9DBBF0013D281 /* Kolesa_TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		326309261CC9DBBF0013D281 /* Kolesa_TestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 326309361CC9DBBF0013D281 /* Build configuration list for PBXNativeTarget "Kolesa_TestUITests" */;
+			buildPhases = (
+				326309231CC9DBBF0013D281 /* Sources */,
+				326309241CC9DBBF0013D281 /* Frameworks */,
+				326309251CC9DBBF0013D281 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				326309291CC9DBBF0013D281 /* PBXTargetDependency */,
+			);
+			name = Kolesa_TestUITests;
+			productName = Kolesa_TestUITests;
+			productReference = 326309271CC9DBBF0013D281 /* Kolesa_TestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		326308FB1CC9DBBF0013D281 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Dilnur Yuldashev";
+				TargetAttributes = {
+					326309021CC9DBBF0013D281 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = V4K54MSD5Y;
+					};
+					3263091B1CC9DBBF0013D281 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = V4K54MSD5Y;
+						TestTargetID = 326309021CC9DBBF0013D281;
+					};
+					326309261CC9DBBF0013D281 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = V4K54MSD5Y;
+						TestTargetID = 326309021CC9DBBF0013D281;
+					};
+				};
+			};
+			buildConfigurationList = 326308FE1CC9DBBF0013D281 /* Build configuration list for PBXProject "Kolesa_Test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 326308FA1CC9DBBF0013D281;
+			productRefGroup = 326309041CC9DBBF0013D281 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				326309021CC9DBBF0013D281 /* Kolesa_Test */,
+				3263091B1CC9DBBF0013D281 /* Kolesa_TestTests */,
+				326309261CC9DBBF0013D281 /* Kolesa_TestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		326309011CC9DBBF0013D281 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				326309161CC9DBBF0013D281 /* LaunchScreen.storyboard in Resources */,
+				326309131CC9DBBF0013D281 /* Assets.xcassets in Resources */,
+				326309111CC9DBBF0013D281 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3263091A1CC9DBBF0013D281 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		326309251CC9DBBF0013D281 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		326308FF1CC9DBBF0013D281 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3263093E1CC9FE8E0013D281 /* AddMemberViewController.m in Sources */,
+				326309441CC9FFE90013D281 /* CoreViewController.m in Sources */,
+				3263090B1CC9DBBF0013D281 /* AppDelegate.m in Sources */,
+				326309A01CCA205B0013D281 /* FamilyMember+CoreDataProperties.m in Sources */,
+				326309A11CCA205B0013D281 /* FamilyMember.m in Sources */,
+				3263099B1CCA1FC50013D281 /* Test.xcdatamodeld in Sources */,
+				326309411CC9FEA80013D281 /* EditMemberViewController.m in Sources */,
+				3263093B1CC9FE220013D281 /* FamilyTableViewController.m in Sources */,
+				326309081CC9DBBF0013D281 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		326309181CC9DBBF0013D281 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				326309211CC9DBBF0013D281 /* Kolesa_TestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		326309231CC9DBBF0013D281 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3263092C1CC9DBBF0013D281 /* Kolesa_TestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3263091E1CC9DBBF0013D281 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 326309021CC9DBBF0013D281 /* Kolesa_Test */;
+			targetProxy = 3263091D1CC9DBBF0013D281 /* PBXContainerItemProxy */;
+		};
+		326309291CC9DBBF0013D281 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 326309021CC9DBBF0013D281 /* Kolesa_Test */;
+			targetProxy = 326309281CC9DBBF0013D281 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3263090F1CC9DBBF0013D281 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				326309101CC9DBBF0013D281 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		326309141CC9DBBF0013D281 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				326309151CC9DBBF0013D281 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3263092E1CC9DBBF0013D281 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3263092F1CC9DBBF0013D281 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		326309311CC9DBBF0013D281 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Kolesa_Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DilnurYuldashev.Kolesa-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		326309321CC9DBBF0013D281 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Kolesa_Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DilnurYuldashev.Kolesa-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		326309341CC9DBBF0013D281 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Kolesa_TestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DilnurYuldashev.Kolesa-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kolesa_Test.app/Kolesa_Test";
+			};
+			name = Debug;
+		};
+		326309351CC9DBBF0013D281 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Kolesa_TestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DilnurYuldashev.Kolesa-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kolesa_Test.app/Kolesa_Test";
+			};
+			name = Release;
+		};
+		326309371CC9DBBF0013D281 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Kolesa_TestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DilnurYuldashev.Kolesa-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Kolesa_Test;
+			};
+			name = Debug;
+		};
+		326309381CC9DBBF0013D281 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Kolesa_TestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DilnurYuldashev.Kolesa-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Kolesa_Test;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		326308FE1CC9DBBF0013D281 /* Build configuration list for PBXProject "Kolesa_Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3263092E1CC9DBBF0013D281 /* Debug */,
+				3263092F1CC9DBBF0013D281 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		326309301CC9DBBF0013D281 /* Build configuration list for PBXNativeTarget "Kolesa_Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				326309311CC9DBBF0013D281 /* Debug */,
+				326309321CC9DBBF0013D281 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		326309331CC9DBBF0013D281 /* Build configuration list for PBXNativeTarget "Kolesa_TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				326309341CC9DBBF0013D281 /* Debug */,
+				326309351CC9DBBF0013D281 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		326309361CC9DBBF0013D281 /* Build configuration list for PBXNativeTarget "Kolesa_TestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				326309371CC9DBBF0013D281 /* Debug */,
+				326309381CC9DBBF0013D281 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		326309991CCA1FC50013D281 /* Test.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3263099A1CCA1FC50013D281 /* Test.xcdatamodel */,
+			);
+			currentVersion = 3263099A1CCA1FC50013D281 /* Test.xcdatamodel */;
+			name = Test.xcdatamodeld;
+			path = ../Test.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 326308FB1CC9DBBF0013D281 /* Project object */;
+}
