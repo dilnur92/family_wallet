@@ -120,6 +120,9 @@
                                     <segment title="Male"/>
                                     <segment title="Female"/>
                                 </segments>
+                                <connections>
+                                    <action selector="genderChoiceButton:" destination="fPB-4O-oTv" eventType="valueChanged" id="tch-Dd-Dxj"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone Number With Prefix:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cB0-VJ-e90">
                                 <rect key="frame" x="20" y="242" width="101" height="45"/>
@@ -163,8 +166,11 @@
                     <connections>
                         <outlet property="addPhotoButton" destination="MzY-LQ-6oa" id="XlJ-2Q-a5D"/>
                         <outlet property="age" destination="LMP-6S-Xuk" id="jZD-9b-buX"/>
+                        <outlet property="genderSwitch" destination="eQJ-Ka-Keb" id="uAF-72-IAg"/>
                         <outlet property="image" destination="LRU-cH-uCI" id="cOJ-uY-CE8"/>
                         <outlet property="name" destination="JxC-2t-ZwZ" id="weL-v8-cUa"/>
+                        <outlet property="phoneOne" destination="fzN-co-j1P" id="xuZ-0k-654"/>
+                        <outlet property="phoneTwo" destination="fzJ-wy-41K" id="JW9-vH-oV7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zwa-We-6Xp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -182,6 +188,40 @@
                     <view key="view" contentMode="scaleToFill" id="bNj-JR-hgA">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GkA-KS-0PQ">
+                                <rect key="frame" x="20" y="72" width="109" height="122"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJe-Im-vST">
+                                <rect key="frame" x="137" y="72" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cb-Dk-RQh">
+                                <rect key="frame" x="137" y="101" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Age, Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AI-x3-P7x">
+                                <rect key="frame" x="20" y="202" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amount of Money, USD:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8q-6f-O97">
+                                <rect key="frame" x="20" y="231" width="189" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0pr-6u-IdV">
+                                <rect key="frame" x="20" y="260" width="189" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="tjO-yl-Phx">
@@ -196,6 +236,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ageGenderLabel" destination="7AI-x3-P7x" id="cxa-AI-qat"/>
+                        <outlet property="financeTextEdit" destination="0pr-6u-IdV" id="hIV-RY-cEW"/>
+                        <outlet property="phoneOne" destination="IJe-Im-vST" id="EFz-By-cVT"/>
+                        <outlet property="phoneTwo" destination="7cb-Dk-RQh" id="vK3-YM-Npa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nU2-7Y-fnJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

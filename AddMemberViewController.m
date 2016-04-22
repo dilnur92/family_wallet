@@ -18,6 +18,18 @@
     familyMember.age = [f numberFromString:_age.text];
     NSData *imageData = UIImagePNGRepresentation(image.image);
     familyMember.image = imageData;
+    //forgot to add gender to the model
+    //so i just used phone5 as member gender
+    if(_genderSwitch.selectedSegmentIndex == 0){
+        familyMember.phone5 = @"male";
+    
+    }
+    else{
+        familyMember.phone5 = @"female";
+    }
+    familyMember.phone1 = _phoneOne.text;
+    familyMember.phone2 = _phoneTwo.text;
+    
     [super saveAndReturn];
 }
 
@@ -36,5 +48,9 @@
     imagePickerController.delegate = self;
     //imagePickerController.sourceType =  UIImagePickerControllerSourceTypePhotoLibrary;
     [self presentModalViewController:imagePickerController animated:YES];
+}
+
+- (IBAction)genderChoiceButton:(UISegmentedControl *)sender {
+    
 }
 @end

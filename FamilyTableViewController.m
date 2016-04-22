@@ -31,7 +31,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     FamilyMember *member = [self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = member.name;
-    cell.detailTextLabel.text = [member.financeUsd stringValue];
+    cell.detailTextLabel.text = [member.phone4 stringByAppendingString: @"$"];
     //cell.imageView.image = [member.image ];
     NSData *data = member.image;
     UIImage *image = [UIImage imageNamed:@"empty"];
@@ -74,6 +74,14 @@
         UINavigationController *navController = segue.destinationViewController;
         AddMemberViewController *amdv = (AddMemberViewController *) navController.topViewController;
         FamilyMember *member = [NSEntityDescription insertNewObjectForEntityForName:@"FamilyMember" inManagedObjectContext:[self managedObjectContext]];
+        amdv.familyMember = member;
+    }
+    
+    if([[segue identifier]isEqualToString:@"editMember"]){
+        UINavigationController *navController = segue.destinationViewController;
+        EditMemberViewController *amdv = (EditMemberViewController *) navController.topViewController;
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        FamilyMember *member = (FamilyMember *)[self.fetchedResultsController objectAtIndexPath:indexPath];
         amdv.familyMember = member;
     }
 }

@@ -20,5 +20,9 @@
 @property (nonatomic, retain) UIImagePickerController * imageController;
 
 - (IBAction)addPhotoActionButton:(UIButton *)sender;
+- (IBAction)genderChoiceButton:(UISegmentedControl *)sender;
+@property (weak, nonatomic) IBOutlet UITextField *phoneOne;
+@property (weak, nonatomic) IBOutlet UITextField *phoneTwo;
 
+@property (weak, nonatomic) IBOutlet UISegmentedControl *genderSwitch;
 @end
